@@ -1,0 +1,67 @@
+name: Bug report · English
+description: Something did not work as expected in the free beta.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: This issue is public. Do not upload private images, passwords or personal paths. Original images are optional.
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: Shown at the bottom of the app.
+      placeholder: 2.0.1-beta.1
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: Windows 11, 24H2, x64
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: App language
+      options:
+        - English
+        - 한국어
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where did it happen?
+      options:
+        - Installation or launch
+        - Add files or paste
+        - Compression or image quality
+        - Copy, save or drag a result
+        - Explorer context menu
+        - Language or layout
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open the app…\n2. Choose…\n3. Click…"
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected result and actual result
+      description: Include the exact error message if there is one.
+    validations:
+      required: true
+  - type: textarea
+    id: settings
+    attributes:
+      label: Image and compression settings
+      description: Input format, size and dimensions; target size; output format; Allow resizing and Protect quality. For pasting, name the destination app.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshot or non-sensitive sample (optional)
+      description: Remove private content and personal paths before attaching anything. Original photos are not required.

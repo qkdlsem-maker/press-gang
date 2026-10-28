@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 설치 안내 · Installation help
+    url: https://github.com/qkdlsem-maker/press-gang/blob/main/docs/INSTALL.en.md
+    about: English and Korean installation, update and uninstall instructions.

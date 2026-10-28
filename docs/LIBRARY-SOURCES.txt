@@ -1,0 +1,15 @@
+Press Gang uses unmodified sharp 0.35.5 and its Windows x64 libvips 8.18.7 distribution.
+
+Upstream source, notices and build recipes:
+https://github.com/lovell/sharp/tree/v0.35.5
+https://github.com/lovell/sharp-libvips/tree/v1.3.4
+https://github.com/libvips/libvips/tree/v8.18.7
+
+The sharp-libvips v1.3.4 build scripts identify and fetch the corresponding library source versions and patches. The exact bundled library versions are listed in LIBRARY-VERSIONS.json. The upstream license table is reproduced in LIBVIPS-NOTICES.md. LGPLv3 and GPLv3 texts accompany these notices.
+
+The dynamically loaded library files reside outside the application archive at:
+resources/app.asar.unpacked/node_modules/@img/sharp-win32-x64/lib/
+The user may replace these libraries with compatible modified versions. No application restriction is imposed on modifying those LGPL components, or on reverse engineering for debugging modifications to them. Their own licenses control those components. The application does not use a signature check to prevent library replacement.
+
+Electron source: https://github.com/electron/electron/tree/v45.0.0
+Electron and Chromium license notices are included in the installed application directory.

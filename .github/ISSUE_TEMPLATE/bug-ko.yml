@@ -1,0 +1,67 @@
+name: 문제 제보 · 한국어
+description: 무료 베타에서 예상과 다르게 동작한 부분을 알려주세요.
+title: "[버그] "
+body:
+  - type: markdown
+    attributes:
+      value: 제보 내용은 공개됩니다. 개인 사진·비밀번호·개인 경로는 올리지 마세요. 원본 사진 없이도 제보할 수 있습니다.
+  - type: input
+    id: version
+    attributes:
+      label: 앱 버전
+      description: 앱 아래쪽에 표시됩니다.
+      placeholder: 2.0.1-beta.1
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows 버전
+      placeholder: Windows 11, 24H2, x64
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: 앱 언어
+      options:
+        - 한국어
+        - English
+  - type: dropdown
+    id: area
+    attributes:
+      label: 어느 단계에서 생겼나요?
+      options:
+        - 설치 또는 실행
+        - 파일 추가 또는 붙여넣기
+        - 압축 또는 화질
+        - 결과 복사·저장·끌어내기
+        - 탐색기 우클릭 메뉴
+        - 언어 또는 화면 배치
+        - 그 외
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 다시 발생시키는 순서
+      placeholder: "1. 앱을 열고…\n2. 설정을…\n3. 버튼을 누르면…"
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 기대한 결과와 실제 결과
+      description: 오류 문구가 있다면 그대로 적어주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: settings
+    attributes:
+      label: 이미지와 압축 설정
+      description: 입력 형식·용량·해상도, 목표 용량, 출력 형식, 해상도 줄이기·화질 우선 여부. 붙여넣기 문제는 상대 앱 이름도 알려주세요.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 화면 또는 민감하지 않은 샘플 (선택)
+      description: 개인 내용과 경로를 가린 뒤 첨부해주세요. 원본 사진은 필수가 아닙니다.

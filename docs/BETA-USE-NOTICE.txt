@@ -1,0 +1,16 @@
+Press Gang / 압축깡패 — Free public beta
+
+The official beta installer published by qkdlsem-maker may be downloaded,
+installed and used free of charge. No account or payment is required.
+This beta may contain bugs. Keep originals and check exported results.
+
+Original application source remains UNLICENSED. Publication for inspection
+and issue reporting does not grant a general reuse or redistribution license.
+All other rights in original code and artwork are reserved.
+Third-party components retain their own licenses; see THIRD-PARTY-NOTICES.txt.
+
+공식 베타는 무료로 다운로드·설치·사용할 수 있습니다. 계정이나 결제가
+필요하지 않습니다. 오류가 있을 수 있으므로 원본을 보관하고 결과를 확인하세요.
+앱 자체 소스는 UNLICENSED 상태를 유지합니다. 확인과 문제 제보를 위한 공개가
+일반적인 재사용·재배포 권한을 부여하지는 않습니다. 원본 코드와 그림의 그 밖의
+권리는 유보됩니다. 외부 구성요소는 각자의 라이선스를 따릅니다.

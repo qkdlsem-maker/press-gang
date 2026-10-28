@@ -1,0 +1,67 @@
+{
+  "name": "press-gang",
+  "version": "2.0.1-beta.1",
+  "description": "Press Gang — target-size image compression, with attitude.",
+  "main": "app/main.cjs",
+  "author": "압축깡패",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test test/*.test.cjs",
+    "build": "electron-builder --win nsis --x64 --publish never"
+  },
+  "dependencies": {
+    "sharp": "0.35.5"
+  },
+  "devDependencies": {
+    "electron": "45.0.0",
+    "electron-builder": "26.15.3"
+  },
+  "build": {
+    "appId": "studio.pressgang.desktop",
+    "productName": "압축깡패",
+    "executableName": "PressGang",
+    "directories": {
+      "output": "release",
+      "buildResources": "assets"
+    },
+    "files": [
+      "app/**/*",
+      "assets/**/*",
+      "docs/**/*",
+      "package.json"
+    ],
+    "asarUnpack": [
+      "node_modules/sharp/**/*",
+      "node_modules/@img/**/*"
+    ],
+    "npmRebuild": false,
+    "electronLanguages": [
+      "ko",
+      "en-US"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico",
+      "artifactName": "PressGang-Setup-${version}-${arch}.${ext}",
+      "requestedExecutionLevel": "asInvoker"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "runAfterFinish": false,
+      "deleteAppDataOnUninstall": false,
+      "installerLanguages": [
+        "ko_KR",
+        "en_US"
+      ],
+      "include": "assets/installer.nsh",
+      "displayLanguageSelector": true
+    }
+  }
+}
